@@ -1,1 +1,1 @@
-app.js
+angular.module('NoteWrangler', ['ngRoute', 'ngResource']);
