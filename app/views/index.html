@@ -5,7 +5,19 @@
     <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
   </head>
   <body>
-    <h1>Note Wrangler</h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="/#/">NoteWrangler</a>
+          </div>
+        </div>
+      </div>
+      <ul class="nav navbar-nav">
+      <li><a href="#/notes">Notes</a></li>
+      <li><a href="#/users">Users</a></li>
+    </ul>
+    </nav>
     <div ng-view class="container-fluid"></div>
   </body>
   
@@ -25,7 +37,10 @@
   <script src="assets/javascript/controllers/notesShowController.js"></script>
   <script src="assets/javascript/controllers/notesEditController.js"></script>
   <script src="assets/javascript/controllers/notesCreateController.js"></script>
+  <script src="assets/javascript/controllers/userIndexController.js"></script>
+  <script src="assets/javascript/controllers/userShowController.js"></script>  
   
   <!-- Services -->
   <script src="assets/javascript/services/note.js"></script>
+  <script src="assets/javascript/services/user.js"></script>
 </html>
