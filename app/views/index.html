@@ -11,12 +11,9 @@
           <div class="navbar-brand">
             <a href="/#/">NoteWrangler</a>
           </div>
-        </div>
-      </div>
-      <ul class="nav navbar-nav">
-      <li><a href="#/notes">Notes</a></li>
-      <li><a href="#/users">Users</a></li>
-    </ul>
+          </div>
+          <nw-page-nav></nw-page-nav>
+        </div>      
     </nav>
     <div ng-view class="container-fluid"></div>
   </body>
@@ -26,11 +23,19 @@
   <script src="assets/javascript/vendor/angular.js"></script>
   <script src="assets/javascript/vendor/angular-route.js"></script>
   <script src="assets/javascript/vendor/angular-resource.js"></script>
+  <!-- only import the specific files from bootstrap.js for tooltips/popovers to keep file smaller -->
+  <script src="assets/javascript/vendor/bootstrap.js"></script>
+  <script src="assets/javascript/vendor/ngGravatar.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 
   <!-- App -->
   <script src="assets/javascript/app.js"></script>
   <script src="assets/javascript/routes.js"></script>
+  
   <!-- Directives -->
+  <script src="assets/javascript/directives/nwPageNav.js"></script>
+  <script src="assets/javascript/directives/nwCategorySelector.js"></script>
+  <script src="assets/javascript/directives/title.js"></script>
   
   <!-- Controllers -->
   <script src="assets/javascript/controllers/notesIndexController.js"></script>
@@ -40,7 +45,19 @@
   <script src="assets/javascript/controllers/userIndexController.js"></script>
   <script src="assets/javascript/controllers/userShowController.js"></script>  
   
+  <!-- Filters -->
+  <script src="assets/javascript/filters/categoryFilter.js"></script>
+
   <!-- Services -->
   <script src="assets/javascript/services/note.js"></script>
   <script src="assets/javascript/services/user.js"></script>
+  <script src="assets/javascript/services/category.js"></script>
 </html>
+
+
+
+
+
+
+
+
